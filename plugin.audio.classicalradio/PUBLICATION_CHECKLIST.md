@@ -14,8 +14,8 @@
 - [x] session cache tied to the configured credentials
 - [x] root menu requires configured credentials
 - [x] session re-login logic on HTTP 401/403
-- [x] stream fallback uses lightweight streamed `GET` probes
-- [x] no blind fallback to the first PLS server
+- [x] bounded streamed `GET` probes with fallback on inconclusive network failures
+- [x] explicit HTTP rejections are not treated as playable; inconclusive probes may fall back conservatively
 - [x] no compiled Python files included
 - [x] no analytics
 - [x] no direct Kodi database access
@@ -41,9 +41,9 @@
 ## Deferred robustness work
 
 - [ ] explicitly test stream redirects against `Kodi.Player().getPlayingFile()`
-- [ ] reduce worst-case stream-probe latency during CDN/network outages
+- [x] bounded stream probing with short timeouts and conservative fallback
 - [x] add useful debug logging for swallowed `current_track()` API errors
 - [ ] normalise favourite/channel IDs defensively
-- [ ] evaluate starting audio before the initial metadata lookup
+- [x] playback starts before optional initial metadata lookup
 - [ ] test graceful recovery after temporary network loss
 - [ ] simplify Kodi entry points by moving more logic into `resources/lib/`

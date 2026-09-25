@@ -1,4 +1,4 @@
-<?xml version="0.9.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.audio.classicalradio" name="ClassicalRadio" version="0.9.0" provider-name="Édouard Duliège">
   <requires>
     <import addon="xbmc.python" version="3.0.1"/>
@@ -15,7 +15,7 @@
     <description lang="fr_FR">Écoutez ClassicalRadio avec votre compte AudioAddict. Parcourez toutes les chaînes, les styles, les chaînes populaires et nouvelles, synchronisez vos favoris, choisissez la qualité audio Premium et utilisez les contrôles natifs de Kodi.</description>
     <disclaimer lang="en_GB">Unofficial community add-on. Requires a valid AudioAddict/ClassicalRadio account. Not affiliated with, endorsed by, or supported by ClassicalRadio or AudioAddict.</disclaimer>
     <disclaimer lang="fr_FR">Extension communautaire non officielle. Nécessite un compte AudioAddict/ClassicalRadio valide. Sans affiliation avec ClassicalRadio ou AudioAddict, et non approuvée ni prise en charge par eux.</disclaimer>
-    <platform>all</platform>
+    <platform>linux</platform>
     <license>GPL-3.0-or-later</license>
     <source>https://github.com/edouardduliege/kodi-addon-classicalradio</source>
     <website>https://www.classicalradio.com/</website>
